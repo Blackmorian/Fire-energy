@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Karty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menu -->
+    <nav>
+        <ul>
+            <li><a href="#">Domů</a></li>
+            <li><a href="#cards">Karty</a></li>
+            <li><a href="#about">O projektu</a></li>
+            <li><a href="#contact">Kontakty</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hlavní obsah -->
+    <div id="cards" class="card-container">
+        <div class="card">
+            <img src="images/charmander.jpg" alt="Charmander" class="card-img" onclick="openModal('Charmander', 'Tato karta je velmi silná.');">
+            <p>Charmander</p>
+        </div>
+        <!-- Přidej více karet podle potřeby -->
+    </div>
+
+    <!-- Modal pro zobrazení informací o kartě -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content">
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
